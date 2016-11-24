@@ -23,7 +23,7 @@ gem "bootstrap-sass"
 gem "font-awesome-sass"
 gem "simple_form"
 gem "autoprefixer-rails"
-
+gem 'simple_form'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -41,7 +41,10 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'rails-controller-testing'
   gem 'byebug', platform: :mri
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :development do
