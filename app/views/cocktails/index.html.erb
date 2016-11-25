@@ -1,7 +1,17 @@
-<h1> Cocktails of the house</h1>
-
+<h1> Cocktails of the house </h1>
+<p> -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</p>
+<div class="container">
 <%= link_to "Add a new cocktail", new_cocktail_path %>
+<p> -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</p>
 
 <% @cocktails.each do |cocktail| %>
-<h2> <%= link_to cocktail.name, cocktail_path(cocktail) %> </h2>
+<h3> <%= link_to cocktail.name, cocktail_path(cocktail) %> </h3>
+<ul>
+<li> <%= cl_image_tag(cocktail.photo,
+      width: 300, height: 300, crop: :fill) %> </li>
+<p> -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</p>
+<li> <%= link_to "delete", cocktail_path(cocktail), method: :delete %> </li>
+</ul>
+
 <% end %>
+</div>

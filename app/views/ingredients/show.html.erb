@@ -1,6 +1,9 @@
 <h1> <%= @ingredient.name %> </h1>
-<h2> Voici les cocktails qui contiennent <%= @ingredient.name %></h2>
+<h3> Voici les cocktails qui contiennent <%= @ingredient.name %></h3>
 <ul> <% @ingredient.cocktails.each do |cocktail| %>
   <li> <%= cocktail.name %> </li>
+  <%= cl_image_tag cocktail.photo, height: 100, width: 150, crop: :fill %>
   <% end %>
 </ul>
+
+<%= link_to 'Back', cocktails_path %>

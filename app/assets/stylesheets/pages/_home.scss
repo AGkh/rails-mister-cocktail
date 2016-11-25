@@ -2,3 +2,44 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+body {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  font-family: 'Futura';
+}
+
+table {
+  margin: 20px auto;
+  text-align: left;
+}
+
+td {
+  padding: 0 5px;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'CabinSketch';
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+img {
+  margin: 20px auto;
+}
+
+.container {
+  width: 900px;
+  text-align: center;
+}

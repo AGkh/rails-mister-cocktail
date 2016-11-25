@@ -23,6 +23,8 @@ gem "bootstrap-sass"
 gem "font-awesome-sass"
 gem "simple_form"
 gem "autoprefixer-rails"
+gem 'cloudinary', '1.1.0'
+gem 'carrierwave'
 
 # security
 gem 'figaro'
